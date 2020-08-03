@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    .beer{
+        width: 500px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 100px;
+        transition: all .7s;
+    }
+    .canImg{
+        width: 100px;
+        position: absolute;
+        transition: all .7s;
+    }
+    .can01{
+        /* animation:can .5s linear; */
+        top: -50px;
+        left: 0;
+        opacity: 0;
+    }
+    .can02{
+        /* animation:can .5s linear; */
+        top: -50px;
+        left: 17%;
+        opacity: 0;
+    }
+    .can03{
+        top: -50px;
+        left: 34%;
+        opacity: 0;
+    }
+    .can04{
+        top: -50px;
+        left: 51%;
+        opacity: 0;
+    }
+    .can05{
+        top: -50px;
+        left: 68%;
+        opacity: 0;
+    }
+    .can06{
+        top: -50px;
+        left: 85%;
+        opacity: 0;
+    }
+    .can07{
+        top: -50px;
+        left: 102%;
+        opacity: 0;
+    }
+    @keyframes can {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% { 
+            top: 0;
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <div class="beer">
+        <img src="beer.png" alt="" class="canImg can01 ">
+        <img src="beer.png" alt="" class="canImg can02 ">
+        <img src="beer.png" alt="" class="canImg can03 ">
+        <img src="beer.png" alt="" class="canImg can04 ">
+        <img src="beer.png" alt="" class="canImg can05 ">
+        <img src="beer.png" alt="" class="canImg can06 ">
+        <img src="beer.png" alt="" class="canImg can07 ">
+    </div>
+    <script>
+        setTimeout(function(){
+            $('.can01').css({"opacity":"1", "top":"0px"});
+        },200)
+        setTimeout(function(){
+            $('.can02').css({"opacity":"1", "top":"0px"});
+        },300)
+        setTimeout(function(){
+            $('.can03').css({"opacity":"1", "top":"0px"});
+        },600)
+        setTimeout(function(){
+            $('.can04').css({"opacity":"1", "top":"0px"});
+        },800)
+        setTimeout(function(){
+            $('.can05').css({"opacity":"1", "top":"0px"});
+        },1000)
+        setTimeout(function(){
+            $('.can06').css({"opacity":"1", "top":"0px"});
+        },1200)
+        setTimeout(function(){
+            $('.can07').css({"opacity":"1", "top":"0px"});
+        },1400)
+    </script>
+</body>
+</html>
